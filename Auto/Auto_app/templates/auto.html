@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Страна</th>
+            <th>Привод</th>
+            <th>Мощность</th>
+            <th>Примечание</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.power}}</td>
+            <td>{{item.drive}}</td>
+            <td>{{item.country}}</td>
+            <td>{{item.comments}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
